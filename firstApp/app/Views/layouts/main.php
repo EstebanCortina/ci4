@@ -9,7 +9,9 @@
 
 <body>
   <section>
+    <h3>Aqui va un texto</h3>
     <?= $this->renderSection('contenido') ?>
+    <h3>Aqui va un componente</h3>
     <?= $this->include('componentes/menu') ?>
   </section>
 </body>
