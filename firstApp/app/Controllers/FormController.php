@@ -7,10 +7,10 @@ class FormController extends BaseController
   public function index()
   {
     $vista =
-      view('plantillas/header') .
+      view('componentes/header') .
       view('form/body') .
-      view('plantillas/menu') .
-      view('plantillas/footer');
+      view('componentes/menu') .
+      view('componentes/footer');
     return $vista;
   }
   public function data()
