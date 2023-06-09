@@ -34,6 +34,7 @@ $routes->get('/form', 'FormController::index');
 $routes->get('/vistas', 'VistasController::index');
 $routes->get('/header', 'VistasController::header');
 $routes->get('/footer', 'VistasController::footer');
+$routes->get('/datarender', 'DataRenderController::index');
 
 
 /*
