@@ -13,4 +13,8 @@ class FormController extends BaseController
       view('plantillas/footer');
     return $vista;
   }
+  public function data()
+  {
+    print_r($_POST);
+  }
 }

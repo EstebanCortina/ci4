@@ -31,6 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('/form', 'FormController::index');
+$routes->post('/form', 'FormController::data');
 $routes->get('/vistas', 'VistasController::index');
 $routes->get('/header', 'VistasController::header');
 $routes->get('/footer', 'VistasController::footer');

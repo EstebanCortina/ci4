@@ -1,7 +1,7 @@
 <div>
-  <form>
+  <form method="POST" action="<?php echo base_url() ?>form">
     <label for="userName">Nombre:</label>
     <input type="text" name="userName">
-    <button type="button">Enviar</button>
+    <button type="submit">Enviar</button>
   </form>
 </div>
