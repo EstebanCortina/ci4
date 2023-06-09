@@ -35,6 +35,8 @@ $routes->get('/vistas', 'VistasController::index');
 $routes->get('/header', 'VistasController::header');
 $routes->get('/footer', 'VistasController::footer');
 $routes->get('/datarender', 'DataRenderController::index');
+$routes->get('/urlvariables', 'URLVariablesController::index');
+$routes->get('/urlvariables/(:num)', 'URLVariablesController::value/$1');
 
 
 /*
