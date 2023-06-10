@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\UserModel;
+
 class FormController extends BaseController
 {
   public function index()
@@ -15,6 +17,17 @@ class FormController extends BaseController
   }
   public function data()
   {
-    print_r($_POST);
+    $userName = $this->request->getPost('userName');
+    $data = [
+      'username' => $userName
+    ];
+
+    $userModel = new UserModel();
+
+    $newID = $userModel->createUser($data);
+    $data = [
+      'id' => $newID
+    ];
+    return redirect()->to('/form')->with('data', $data);
   }
 }

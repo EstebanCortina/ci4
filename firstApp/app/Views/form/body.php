@@ -4,4 +4,15 @@
     <input type="text" name="userName">
     <button type="submit">Enviar</button>
   </form>
+  <div>
+    <p>
+      <?php
+      if (session()->has('data')) {
+        $data = session('data');
+        echo "Nuevo usuario con ID: " . $data['id'];
+        session()->remove('data');
+      }
+      ?>
+    </p>
+  </div>
 </div>
